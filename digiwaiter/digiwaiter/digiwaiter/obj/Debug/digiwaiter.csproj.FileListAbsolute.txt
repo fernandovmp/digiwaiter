@@ -1,0 +1,10 @@
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\bin\Debug\digiwaiter.exe.config
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\bin\Debug\digiwaiter.exe
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\bin\Debug\digiwaiter.pdb
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.csprojAssemblyReference.cache
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.Properties.Resources.resources
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.csproj.GenerateResource.cache
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.exe
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.pdb
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmLogin.resources
