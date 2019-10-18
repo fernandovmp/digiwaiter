@@ -37,6 +37,9 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.chboxShowPass = new System.Windows.Forms.CheckBox();
+            this.lblError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +96,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(680, 303);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(108, 13);
-            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Esqueci minha senha";
             // 
@@ -103,16 +106,49 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '●';
             this.txtSenha.Size = new System.Drawing.Size(385, 20);
-            this.txtSenha.TabIndex = 8;
+            this.txtSenha.TabIndex = 2;
             // 
             // btnEntrar
             // 
             this.btnEntrar.Location = new System.Drawing.Point(403, 341);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(106, 23);
-            this.btnEntrar.TabIndex = 9;
+            this.btnEntrar.TabIndex = 5;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
+            // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(515, 341);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(106, 23);
+            this.btnSair.TabIndex = 6;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.BtnSair_Click);
+            // 
+            // chboxShowPass
+            // 
+            this.chboxShowPass.AutoSize = true;
+            this.chboxShowPass.Location = new System.Drawing.Point(403, 306);
+            this.chboxShowPass.Name = "chboxShowPass";
+            this.chboxShowPass.Size = new System.Drawing.Size(93, 17);
+            this.chboxShowPass.TabIndex = 3;
+            this.chboxShowPass.Text = "Mostrar senha";
+            this.chboxShowPass.UseVisualStyleBackColor = true;
+            this.chboxShowPass.CheckedChanged += new System.EventHandler(this.ChboxShowPass_CheckedChanged);
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(408, 167);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(10, 13);
+            this.lblError.TabIndex = 12;
+            this.lblError.Text = " ";
             // 
             // frmLogin
             // 
@@ -120,6 +156,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.chboxShowPass);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSenha);
@@ -130,7 +169,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DigiWaiter";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -148,6 +190,9 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.CheckBox chboxShowPass;
+        private System.Windows.Forms.Label lblError;
     }
 }
 
