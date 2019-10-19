@@ -40,6 +40,7 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.chboxShowPass = new System.Windows.Forms.CheckBox();
             this.lblError = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,12 +151,24 @@
             this.lblError.TabIndex = 12;
             this.lblError.Text = " ";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(408, 154);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(276, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = " Bem-vindo(a). Digite seu usuário e senha para continuar.";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.chboxShowPass);
             this.Controls.Add(this.btnSair);
@@ -193,6 +206,7 @@
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.CheckBox chboxShowPass;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label label2;
     }
 }
 
