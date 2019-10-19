@@ -133,5 +133,11 @@ namespace digiwaiter
         {
             Application.Run(new frmLogin());
         }
+
+        private void ShowDetails_Click(object sender, EventArgs e)
+        {
+            var details = new frmJobDetails();
+            details.Show();
+        }
     }
 }
