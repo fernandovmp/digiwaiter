@@ -427,6 +427,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(100, 24);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(137, 20);
             this.textBox6.TabIndex = 38;
             this.textBox6.Text = "Hortêncio";
@@ -435,6 +436,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(352, 24);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(137, 20);
             this.textBox7.TabIndex = 39;
             this.textBox7.Text = "4/10/2019";
