@@ -11,24 +11,24 @@ using System.Threading;
 
 namespace digiwaiter
 {
-    public partial class frmHall : Form
+    public partial class frmContato : Form
     {
         Thread th;
-        public frmHall()
+        public frmContato()
         {
             InitializeComponent();
         }
 
-        private void Label7_Click(object sender, EventArgs e)
+        private void LblDashboard_Click(object sender, EventArgs e)
         {
             this.Close();
-            th = new Thread(OpenContatoForm);
+            th = new Thread(OpenHallForm);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
-        private void OpenContatoForm(object obj)
+        private void OpenHallForm(object obj)
         {
-            Application.Run(new frmContato());
+            Application.Run(new frmHall());
         }
     }
 }
