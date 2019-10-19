@@ -11,10 +11,10 @@ using System.Threading;
 
 namespace digiwaiter
 {
-    public partial class frmContato : Form
+    public partial class frmJobReq : Form
     {
         Thread th;
-        public frmContato()
+        public frmJobReq()
         {
             InitializeComponent();
         }
@@ -31,29 +31,42 @@ namespace digiwaiter
             Application.Run(new frmHall());
         }
 
-        private void LblVagas_Click(object sender, EventArgs e)
+        private void LblContato_Click(object sender, EventArgs e)
         {
             this.Close();
-            th = new Thread(OpenVagasForm);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-        }
-        private void OpenVagasForm(object obj)
-        {
-            Application.Run(new frmJob());
-        }
-
-        private void LblAgenda_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            th = new Thread(OpenAgendaForm);
+            th = new Thread(OpenContatoForm);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
 
-        private void OpenAgendaForm(object obj)
+        private void OpenContatoForm(object obj)
         {
-            Application.Run(new frmAgenda());
+            Application.Run(new frmContato());
+        }
+
+        private void PnlVerificar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenJobRequestForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenJobRequestForm(object obj)
+        {
+            Application.Run(new frmJobReq());
+        }
+
+        private void PnlSolicitar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenJobCheckForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void OpenJobCheckForm(object obj)
+        {
+            Application.Run(new frmJobCheck());
         }
 
         private void LblCandidatos_Click(object sender, EventArgs e)
@@ -80,6 +93,32 @@ namespace digiwaiter
         private void OpenMembrosForm(object obj)
         {
             Application.Run(new frmMembros());
+        }
+
+        private void LblAgenda_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenAgendaForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenAgendaForm(object obj)
+        {
+            Application.Run(new frmAgenda());
+        }
+
+        private void LblVagas_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenVagasForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenVagasForm(object obj)
+        {
+            Application.Run(new frmJob());
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)

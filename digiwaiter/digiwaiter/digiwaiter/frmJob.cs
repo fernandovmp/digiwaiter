@@ -43,5 +43,82 @@ namespace digiwaiter
         {
             Application.Run(new frmContato());
         }
+
+        private void PnlVerificar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenJobRequestForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenJobRequestForm(object obj)
+        {
+            Application.Run(new frmJobReq());
+        }
+
+        private void PnlSolicitar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenJobCheckForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void OpenJobCheckForm(object obj)
+        {
+            Application.Run(new frmJobCheck());
+        }
+
+        private void LblCandidatos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenCandidatosForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenCandidatosForm(object obj)
+        {
+            Application.Run(new frmCandidatos());
+        }
+
+        private void LblMembros_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenMembrosForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenMembrosForm(object obj)
+        {
+            Application.Run(new frmMembros());
+        }
+
+        private void LblAgenda_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenAgendaForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenAgendaForm(object obj)
+        {
+            Application.Run(new frmAgenda());
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenMainForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenMainForm(object obj)
+        {
+            Application.Run(new frmLogin());
+        }
     }
 }

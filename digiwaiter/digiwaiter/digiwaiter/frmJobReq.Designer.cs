@@ -1,6 +1,6 @@
 ﻿namespace digiwaiter
 {
-    partial class frmContato
+    partial class frmJobReq
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContato));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJobReq));
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblNome = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -38,10 +38,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblCurrentSection = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblVagas = new System.Windows.Forms.Label();
             this.lblContato = new System.Windows.Forms.Label();
             this.lblDashboard = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblVagas = new System.Windows.Forms.Label();
             this.lblCandidatos = new System.Windows.Forms.Label();
             this.lblMembros = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -50,18 +50,34 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblSetor = new System.Windows.Forms.Label();
+            this.comboSetor = new System.Windows.Forms.ComboBox();
+            this.lblExp = new System.Windows.Forms.Label();
+            this.comboExp = new System.Windows.Forms.ComboBox();
             this.lblDestinatario = new System.Windows.Forms.Label();
             this.txtDestinatario = new System.Windows.Forms.TextBox();
-            this.lblAssunto = new System.Windows.Forms.Label();
-            this.txtAssunto = new System.Windows.Forms.TextBox();
-            this.lblAnexos = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblAnexosMsg = new System.Windows.Forms.Label();
-            this.linkAnexosMsg = new System.Windows.Forms.LinkLabel();
-            this.btnAnexos = new System.Windows.Forms.Button();
+            this.lblJustificativa = new System.Windows.Forms.Label();
+            this.txtJustificativa = new System.Windows.Forms.TextBox();
+            this.lblPerfil = new System.Windows.Forms.Label();
+            this.txtReqTecnicos = new System.Windows.Forms.TextBox();
+            this.grpReqTecnicos = new System.Windows.Forms.GroupBox();
+            this.btnSolicitar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblMensagem = new System.Windows.Forms.Label();
-            this.txtMensagem = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -73,6 +89,7 @@
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.grpReqTecnicos.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -160,19 +177,35 @@
             this.lblCurrentSection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCurrentSection.Location = new System.Drawing.Point(27, 9);
             this.lblCurrentSection.Name = "lblCurrentSection";
-            this.lblCurrentSection.Size = new System.Drawing.Size(100, 32);
+            this.lblCurrentSection.Size = new System.Drawing.Size(184, 32);
             this.lblCurrentSection.TabIndex = 0;
-            this.lblCurrentSection.Text = "Contato";
+            this.lblCurrentSection.Text = "Vagas - Solicitar";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel4.Controls.Add(this.lblContato);
+            this.panel4.Controls.Add(this.lblVagas);
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel4.Location = new System.Drawing.Point(-1, 215);
+            this.panel4.Location = new System.Drawing.Point(-1, 55);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(176, 35);
             this.panel4.TabIndex = 3;
+            // 
+            // lblVagas
+            // 
+            this.lblVagas.AutoSize = true;
+            this.lblVagas.BackColor = System.Drawing.Color.Transparent;
+            this.lblVagas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblVagas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVagas.ForeColor = System.Drawing.Color.White;
+            this.lblVagas.Image = ((System.Drawing.Image)(resources.GetObject("lblVagas.Image")));
+            this.lblVagas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblVagas.Location = new System.Drawing.Point(13, 7);
+            this.lblVagas.Name = "lblVagas";
+            this.lblVagas.Size = new System.Drawing.Size(71, 21);
+            this.lblVagas.TabIndex = 2;
+            this.lblVagas.Text = "     Vagas";
+            this.lblVagas.Click += new System.EventHandler(this.LblVagas_Click);
             // 
             // lblContato
             // 
@@ -183,11 +216,12 @@
             this.lblContato.ForeColor = System.Drawing.Color.White;
             this.lblContato.Image = ((System.Drawing.Image)(resources.GetObject("lblContato.Image")));
             this.lblContato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblContato.Location = new System.Drawing.Point(13, 7);
+            this.lblContato.Location = new System.Drawing.Point(13, 222);
             this.lblContato.Name = "lblContato";
             this.lblContato.Size = new System.Drawing.Size(85, 21);
             this.lblContato.TabIndex = 11;
             this.lblContato.Text = "     Contato";
+            this.lblContato.Click += new System.EventHandler(this.LblContato_Click);
             // 
             // lblDashboard
             // 
@@ -214,22 +248,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // lblVagas
-            // 
-            this.lblVagas.AutoSize = true;
-            this.lblVagas.BackColor = System.Drawing.Color.Transparent;
-            this.lblVagas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblVagas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVagas.ForeColor = System.Drawing.Color.White;
-            this.lblVagas.Image = ((System.Drawing.Image)(resources.GetObject("lblVagas.Image")));
-            this.lblVagas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblVagas.Location = new System.Drawing.Point(13, 62);
-            this.lblVagas.Name = "lblVagas";
-            this.lblVagas.Size = new System.Drawing.Size(71, 21);
-            this.lblVagas.TabIndex = 2;
-            this.lblVagas.Text = "     Vagas";
-            this.lblVagas.Click += new System.EventHandler(this.LblVagas_Click);
             // 
             // lblCandidatos
             // 
@@ -266,6 +284,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.lblContato);
             this.panel1.Controls.Add(this.lblDashboard);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblAgenda);
@@ -273,7 +292,6 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.lblMembros);
             this.panel1.Controls.Add(this.lblCandidatos);
-            this.panel1.Controls.Add(this.lblVagas);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(0, 43);
@@ -341,137 +359,297 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
             // 
+            // lblSetor
+            // 
+            this.lblSetor.AutoSize = true;
+            this.lblSetor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSetor.Location = new System.Drawing.Point(197, 136);
+            this.lblSetor.Name = "lblSetor";
+            this.lblSetor.Size = new System.Drawing.Size(39, 17);
+            this.lblSetor.TabIndex = 9;
+            this.lblSetor.Text = "Setor";
+            // 
+            // comboSetor
+            // 
+            this.comboSetor.FormattingEnabled = true;
+            this.comboSetor.Location = new System.Drawing.Point(192, 152);
+            this.comboSetor.Name = "comboSetor";
+            this.comboSetor.Size = new System.Drawing.Size(225, 21);
+            this.comboSetor.TabIndex = 1;
+            this.comboSetor.Text = "Vendas";
+            // 
+            // lblExp
+            // 
+            this.lblExp.AutoSize = true;
+            this.lblExp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExp.Location = new System.Drawing.Point(541, 136);
+            this.lblExp.Name = "lblExp";
+            this.lblExp.Size = new System.Drawing.Size(74, 17);
+            this.lblExp.TabIndex = 11;
+            this.lblExp.Text = "Experiência";
+            // 
+            // comboExp
+            // 
+            this.comboExp.FormattingEnabled = true;
+            this.comboExp.Location = new System.Drawing.Point(536, 152);
+            this.comboExp.Name = "comboExp";
+            this.comboExp.Size = new System.Drawing.Size(225, 21);
+            this.comboExp.TabIndex = 2;
+            this.comboExp.Text = "Pleno";
+            // 
             // lblDestinatario
             // 
             this.lblDestinatario.AutoSize = true;
             this.lblDestinatario.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDestinatario.Location = new System.Drawing.Point(197, 133);
+            this.lblDestinatario.Location = new System.Drawing.Point(197, 189);
             this.lblDestinatario.Name = "lblDestinatario";
-            this.lblDestinatario.Size = new System.Drawing.Size(126, 17);
-            this.lblDestinatario.TabIndex = 7;
-            this.lblDestinatario.Text = "Destinatário (e-mail)";
+            this.lblDestinatario.Size = new System.Drawing.Size(53, 17);
+            this.lblDestinatario.TabIndex = 14;
+            this.lblDestinatario.Text = "Posição";
             // 
             // txtDestinatario
             // 
-            this.txtDestinatario.Location = new System.Drawing.Point(192, 149);
+            this.txtDestinatario.Location = new System.Drawing.Point(192, 205);
             this.txtDestinatario.Name = "txtDestinatario";
-            this.txtDestinatario.Size = new System.Drawing.Size(385, 20);
-            this.txtDestinatario.TabIndex = 1;
+            this.txtDestinatario.Size = new System.Drawing.Size(569, 20);
+            this.txtDestinatario.TabIndex = 3;
             // 
-            // lblAssunto
+            // lblJustificativa
             // 
-            this.lblAssunto.AutoSize = true;
-            this.lblAssunto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto.Location = new System.Drawing.Point(197, 189);
-            this.lblAssunto.Name = "lblAssunto";
-            this.lblAssunto.Size = new System.Drawing.Size(54, 17);
-            this.lblAssunto.TabIndex = 9;
-            this.lblAssunto.Text = "Assunto";
+            this.lblJustificativa.AutoSize = true;
+            this.lblJustificativa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJustificativa.Location = new System.Drawing.Point(197, 242);
+            this.lblJustificativa.Name = "lblJustificativa";
+            this.lblJustificativa.Size = new System.Drawing.Size(73, 17);
+            this.lblJustificativa.TabIndex = 16;
+            this.lblJustificativa.Text = "Justificativa";
             // 
-            // txtAssunto
+            // txtJustificativa
             // 
-            this.txtAssunto.Location = new System.Drawing.Point(192, 205);
-            this.txtAssunto.Name = "txtAssunto";
-            this.txtAssunto.Size = new System.Drawing.Size(385, 20);
-            this.txtAssunto.TabIndex = 2;
+            this.txtJustificativa.Location = new System.Drawing.Point(192, 258);
+            this.txtJustificativa.Multiline = true;
+            this.txtJustificativa.Name = "txtJustificativa";
+            this.txtJustificativa.Size = new System.Drawing.Size(569, 60);
+            this.txtJustificativa.TabIndex = 4;
             // 
-            // lblAnexos
+            // lblPerfil
             // 
-            this.lblAnexos.AutoSize = true;
-            this.lblAnexos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnexos.Location = new System.Drawing.Point(197, 492);
-            this.lblAnexos.Name = "lblAnexos";
-            this.lblAnexos.Size = new System.Drawing.Size(50, 17);
-            this.lblAnexos.TabIndex = 13;
-            this.lblAnexos.Text = "Anexos";
+            this.lblPerfil.AutoSize = true;
+            this.lblPerfil.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPerfil.Location = new System.Drawing.Point(197, 321);
+            this.lblPerfil.Name = "lblPerfil";
+            this.lblPerfil.Size = new System.Drawing.Size(37, 17);
+            this.lblPerfil.TabIndex = 18;
+            this.lblPerfil.Text = "Perfil";
             // 
-            // textBox2
+            // txtReqTecnicos
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 508);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(385, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "C:\\Users\\XXXX\\Desktop\\exemplo.txt";
+            this.txtReqTecnicos.Location = new System.Drawing.Point(192, 337);
+            this.txtReqTecnicos.Multiline = true;
+            this.txtReqTecnicos.Name = "txtReqTecnicos";
+            this.txtReqTecnicos.Size = new System.Drawing.Size(569, 60);
+            this.txtReqTecnicos.TabIndex = 5;
             // 
-            // lblAnexosMsg
+            // grpReqTecnicos
             // 
-            this.lblAnexosMsg.AutoSize = true;
-            this.lblAnexosMsg.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnexosMsg.ForeColor = System.Drawing.Color.Black;
-            this.lblAnexosMsg.Location = new System.Drawing.Point(189, 531);
-            this.lblAnexosMsg.Name = "lblAnexosMsg";
-            this.lblAnexosMsg.Size = new System.Drawing.Size(240, 13);
-            this.lblAnexosMsg.TabIndex = 14;
-            this.lblAnexosMsg.Text = "Você pode visualizar a lista de arquivos anexados";
+            this.grpReqTecnicos.Controls.Add(this.panel11);
+            this.grpReqTecnicos.Controls.Add(this.panel10);
+            this.grpReqTecnicos.Controls.Add(this.panel9);
+            this.grpReqTecnicos.Controls.Add(this.panel8);
+            this.grpReqTecnicos.Controls.Add(this.panel7);
+            this.grpReqTecnicos.Controls.Add(this.panel6);
+            this.grpReqTecnicos.Controls.Add(this.label6);
+            this.grpReqTecnicos.Controls.Add(this.textBox5);
+            this.grpReqTecnicos.Controls.Add(this.label5);
+            this.grpReqTecnicos.Controls.Add(this.textBox4);
+            this.grpReqTecnicos.Controls.Add(this.label3);
+            this.grpReqTecnicos.Controls.Add(this.textBox3);
+            this.grpReqTecnicos.Controls.Add(this.textBox2);
+            this.grpReqTecnicos.Controls.Add(this.label2);
+            this.grpReqTecnicos.Controls.Add(this.textBox1);
+            this.grpReqTecnicos.Controls.Add(this.label1);
+            this.grpReqTecnicos.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.grpReqTecnicos.Location = new System.Drawing.Point(192, 403);
+            this.grpReqTecnicos.Name = "grpReqTecnicos";
+            this.grpReqTecnicos.Size = new System.Drawing.Size(511, 145);
+            this.grpReqTecnicos.TabIndex = 20;
+            this.grpReqTecnicos.TabStop = false;
+            this.grpReqTecnicos.Text = "Requisitos Técnicos";
             // 
-            // linkAnexosMsg
+            // btnSolicitar
             // 
-            this.linkAnexosMsg.AutoSize = true;
-            this.linkAnexosMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkAnexosMsg.Location = new System.Drawing.Point(426, 531);
-            this.linkAnexosMsg.Name = "linkAnexosMsg";
-            this.linkAnexosMsg.Size = new System.Drawing.Size(30, 13);
-            this.linkAnexosMsg.TabIndex = 6;
-            this.linkAnexosMsg.TabStop = true;
-            this.linkAnexosMsg.Text = "aqui.";
-            // 
-            // btnAnexos
-            // 
-            this.btnAnexos.Location = new System.Drawing.Point(583, 508);
-            this.btnAnexos.Name = "btnAnexos";
-            this.btnAnexos.Size = new System.Drawing.Size(29, 20);
-            this.btnAnexos.TabIndex = 5;
-            this.btnAnexos.Text = "...";
-            this.btnAnexos.UseVisualStyleBackColor = true;
+            this.btnSolicitar.Location = new System.Drawing.Point(709, 411);
+            this.btnSolicitar.Name = "btnSolicitar";
+            this.btnSolicitar.Size = new System.Drawing.Size(52, 137);
+            this.btnSolicitar.TabIndex = 11;
+            this.btnSolicitar.Text = "Solicitar";
+            this.btnSolicitar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(189, 172);
+            this.label1.Location = new System.Drawing.Point(6, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Separe os e-mails por ponto e vírgula (;) caso tenha mais que 1 destinatário.";
+            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Requisito 1:";
             // 
-            // lblMensagem
+            // textBox1
             // 
-            this.lblMensagem.AutoSize = true;
-            this.lblMensagem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensagem.Location = new System.Drawing.Point(197, 247);
-            this.lblMensagem.Name = "lblMensagem";
-            this.lblMensagem.Size = new System.Drawing.Size(73, 17);
-            this.lblMensagem.TabIndex = 19;
-            this.lblMensagem.Text = "Mensagem";
+            this.textBox1.Location = new System.Drawing.Point(88, 18);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(137, 25);
+            this.textBox1.TabIndex = 6;
             // 
-            // txtMensagem
+            // textBox2
             // 
-            this.txtMensagem.Location = new System.Drawing.Point(192, 263);
-            this.txtMensagem.Multiline = true;
-            this.txtMensagem.Name = "txtMensagem";
-            this.txtMensagem.Size = new System.Drawing.Size(572, 215);
-            this.txtMensagem.TabIndex = 18;
+            this.textBox2.Location = new System.Drawing.Point(88, 49);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(137, 25);
+            this.textBox2.TabIndex = 7;
             // 
-            // frmContato
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Requisito 2:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(88, 80);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(137, 25);
+            this.textBox3.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Requisito 3:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(88, 111);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(137, 25);
+            this.textBox4.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 114);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 17);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Requisito 4:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(340, 18);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(137, 25);
+            this.textBox5.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(258, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 17);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Requisito 5:";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel6.Location = new System.Drawing.Point(231, 18);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(21, 25);
+            this.panel6.TabIndex = 4;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel7.Location = new System.Drawing.Point(231, 49);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(21, 25);
+            this.panel7.TabIndex = 5;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel8.Location = new System.Drawing.Point(231, 80);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(21, 25);
+            this.panel8.TabIndex = 5;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel9.Location = new System.Drawing.Point(231, 111);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(21, 25);
+            this.panel9.TabIndex = 5;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel10.Location = new System.Drawing.Point(483, 18);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(21, 25);
+            this.panel10.TabIndex = 5;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel11.Location = new System.Drawing.Point(402, 52);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(21, 25);
+            this.panel11.TabIndex = 21;
+            // 
+            // frmJobReq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.lblMensagem);
-            this.Controls.Add(this.txtMensagem);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnAnexos);
-            this.Controls.Add(this.linkAnexosMsg);
-            this.Controls.Add(this.lblAnexosMsg);
-            this.Controls.Add(this.lblAnexos);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.lblAssunto);
-            this.Controls.Add(this.txtAssunto);
+            this.Controls.Add(this.btnSolicitar);
+            this.Controls.Add(this.grpReqTecnicos);
+            this.Controls.Add(this.lblPerfil);
+            this.Controls.Add(this.txtReqTecnicos);
+            this.Controls.Add(this.lblJustificativa);
+            this.Controls.Add(this.txtJustificativa);
             this.Controls.Add(this.lblDestinatario);
             this.Controls.Add(this.txtDestinatario);
+            this.Controls.Add(this.lblExp);
+            this.Controls.Add(this.comboExp);
+            this.Controls.Add(this.lblSetor);
+            this.Controls.Add(this.comboSetor);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -479,7 +657,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
-            this.Name = "frmContato";
+            this.Name = "frmJobReq";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DigiWaiter";
             this.panel2.ResumeLayout(false);
@@ -497,6 +675,8 @@
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.grpReqTecnicos.ResumeLayout(false);
+            this.grpReqTecnicos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -524,17 +704,33 @@
         private System.Windows.Forms.Label lblContato;
         private System.Windows.Forms.Label lblAgenda;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblSetor;
+        private System.Windows.Forms.ComboBox comboSetor;
+        private System.Windows.Forms.Label lblExp;
+        private System.Windows.Forms.ComboBox comboExp;
         private System.Windows.Forms.Label lblDestinatario;
         private System.Windows.Forms.TextBox txtDestinatario;
-        private System.Windows.Forms.Label lblAssunto;
-        private System.Windows.Forms.TextBox txtAssunto;
-        private System.Windows.Forms.Label lblAnexos;
+        private System.Windows.Forms.Label lblJustificativa;
+        private System.Windows.Forms.TextBox txtJustificativa;
+        private System.Windows.Forms.Label lblPerfil;
+        private System.Windows.Forms.TextBox txtReqTecnicos;
+        private System.Windows.Forms.GroupBox grpReqTecnicos;
+        private System.Windows.Forms.Button btnSolicitar;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lblAnexosMsg;
-        private System.Windows.Forms.LinkLabel linkAnexosMsg;
-        private System.Windows.Forms.Button btnAnexos;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblMensagem;
-        private System.Windows.Forms.TextBox txtMensagem;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
     }
 }

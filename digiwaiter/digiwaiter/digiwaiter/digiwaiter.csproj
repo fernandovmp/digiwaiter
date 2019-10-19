@@ -51,6 +51,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgenda.Designer.cs">
+      <DependentUpon>frmAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCandidatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCandidatos.Designer.cs">
+      <DependentUpon>frmCandidatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmContato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,10 +81,34 @@
     <Compile Include="frmJob.Designer.cs">
       <DependentUpon>frmJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmJobCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobCheck.Designer.cs">
+      <DependentUpon>frmJobCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJobReq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobReq.Designer.cs">
+      <DependentUpon>frmJobReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMembros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMembros.Designer.cs">
+      <DependentUpon>frmMembros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgenda.resx">
+      <DependentUpon>frmAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCandidatos.resx">
+      <DependentUpon>frmCandidatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmContato.resx">
       <DependentUpon>frmContato.cs</DependentUpon>
@@ -82,6 +118,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmJob.resx">
       <DependentUpon>frmJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobCheck.resx">
+      <DependentUpon>frmJobCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobReq.resx">
+      <DependentUpon>frmJobReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMembros.resx">
+      <DependentUpon>frmMembros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -50,11 +50,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.pnlVerificar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pnlSolicitar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -67,8 +65,8 @@
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.pnlVerificar.SuspendLayout();
+            this.pnlSolicitar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -241,6 +239,7 @@
             this.lblCandidatos.Size = new System.Drawing.Size(108, 21);
             this.lblCandidatos.TabIndex = 5;
             this.lblCandidatos.Text = "     Candidatos";
+            this.lblCandidatos.Click += new System.EventHandler(this.LblCandidatos_Click);
             // 
             // lblMembros
             // 
@@ -256,6 +255,7 @@
             this.lblMembros.Size = new System.Drawing.Size(97, 21);
             this.lblMembros.TabIndex = 6;
             this.lblMembros.Text = "     Membros";
+            this.lblMembros.Click += new System.EventHandler(this.LblMembros_Click);
             // 
             // panel1
             // 
@@ -300,6 +300,7 @@
             this.lblAgenda.Size = new System.Drawing.Size(164, 21);
             this.lblAgenda.TabIndex = 10;
             this.lblAgenda.Text = "     Agenda/Calendário";
+            this.lblAgenda.Click += new System.EventHandler(this.LblAgenda_Click);
             // 
             // label9
             // 
@@ -332,64 +333,55 @@
             this.pictureBox3.Size = new System.Drawing.Size(20, 20);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
             // 
-            // panel6
+            // pnlVerificar
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Location = new System.Drawing.Point(343, 172);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(130, 130);
-            this.panel6.TabIndex = 4;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel7.Controls.Add(this.label2);
-            this.panel7.Location = new System.Drawing.Point(479, 172);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(130, 130);
-            this.panel7.TabIndex = 5;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel8.Location = new System.Drawing.Point(343, 308);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(130, 130);
-            this.panel8.TabIndex = 5;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel9.Location = new System.Drawing.Point(479, 308);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(130, 130);
-            this.panel9.TabIndex = 5;
+            this.pnlVerificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.pnlVerificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVerificar.BackgroundImage")));
+            this.pnlVerificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnlVerificar.Controls.Add(this.label1);
+            this.pnlVerificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlVerificar.Location = new System.Drawing.Point(200, 116);
+            this.pnlVerificar.Name = "pnlVerificar";
+            this.pnlVerificar.Size = new System.Drawing.Size(130, 130);
+            this.pnlVerificar.TabIndex = 1;
+            this.pnlVerificar.Click += new System.EventHandler(this.PnlVerificar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(3, 93);
+            this.label1.Location = new System.Drawing.Point(23, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 32);
+            this.label1.Size = new System.Drawing.Size(84, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "VERIFICAR";
+            this.label1.Text = "SOLICITAR";
+            // 
+            // pnlSolicitar
+            // 
+            this.pnlSolicitar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.pnlSolicitar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlSolicitar.BackgroundImage")));
+            this.pnlSolicitar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnlSolicitar.Controls.Add(this.label2);
+            this.pnlSolicitar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlSolicitar.Location = new System.Drawing.Point(336, 116);
+            this.pnlSolicitar.Name = "pnlSolicitar";
+            this.pnlSolicitar.Size = new System.Drawing.Size(130, 130);
+            this.pnlSolicitar.TabIndex = 2;
+            this.pnlSolicitar.Click += new System.EventHandler(this.PnlSolicitar_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(3, 94);
+            this.label2.Location = new System.Drawing.Point(21, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 32);
+            this.label2.Size = new System.Drawing.Size(84, 21);
             this.label2.TabIndex = 2;
-            this.label2.Text = "SOLICITAR";
+            this.label2.Text = "VERIFICAR";
             // 
             // frmJob
             // 
@@ -398,10 +390,8 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.pnlSolicitar);
+            this.Controls.Add(this.pnlVerificar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -427,10 +417,10 @@
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.pnlVerificar.ResumeLayout(false);
+            this.pnlVerificar.PerformLayout();
+            this.pnlSolicitar.ResumeLayout(false);
+            this.pnlSolicitar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -457,10 +447,8 @@
         private System.Windows.Forms.Label lblContato;
         private System.Windows.Forms.Label lblAgenda;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel pnlVerificar;
+        private System.Windows.Forms.Panel pnlSolicitar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

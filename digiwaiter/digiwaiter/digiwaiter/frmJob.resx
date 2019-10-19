@@ -7136,7 +7136,30 @@
         EypbddCTDdVJddMHu+rqx/Rmjfb//t//B7hS4HVcnBwAAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="panel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlVerificar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
+        TUUH4woTDjEGcbis0QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAOsSURBVHhe
+        7ZtNaNNgGMc7EQUvoqggeFARBL2olTXJNphMhTm3JJUeBA96UKYgMre86TYPvQgeVEQU3EG8iMcx8DIQ
+        FMEJIoI60IvgBwhOwQnCUOvX/2mftE3t6tomaVreH/wPedI8z/v+m7xvPiMSiUSyEPrU5CZdE0cgu1qZ
+        in06rtk9vdHBVZy2MdAVa8BQRRr645HmTNVOInVLtkKIiSvWDjT4V1EHPBH2ipvd3SeXcqlwgoYOOw02
+        FTGqK0O7q5UZE3uwN40g11wupyruJ9SBlVwufGBXveg0trd1aAOHawK5WqEPTl7oVV+b2Myrw4UfBhCU
+        CzlfOLkNTXwyVWt/Z2dqMf8kHPhlANHTnlyBw+puzoRglDYU8dRQrYPcjPL4aQCR2JpaggZdRX5fBtry
+        YhMSUXs5/ol+XbWuYMVYkZ5Dzka3OFZSyHGOkvZGU8syiSsAY8BOQ7MvI89tQ7Xv+CfrHmpkpnQMwM+y
+        x6Im3lHAQ70xNGsv9y10oH2T3M40FqwJXvBaONbs41wzVBT2mdyY5YVpmooOtCc3Vis9NrgFI/k1J3lG
+        ijifiqQWce1QUGwAN9aa4PU1Y2r2UeTMnTpjIB2vZlzwC98NIOiiB3m/5vOLx9jDdpXac7wUTa3chHkJ
+        xAACV5Dbkft9vkZgemLEklFuxj8EZgARj4l1yP8wXycwfTS1oTXcDBeBGsC00MUQptsUnSv4qexcn+0T
+        lvu5vot6GBAYdOMm1ydNXOCwi6Y2gC+yMn2i03gOu5AGSANKGiCmiu/gNKJwQXXI6VOlBjSdpAEVGUB3
+        STRxrNHFN12rMABBXt/QyFlAGiANkAY4fZIGhMkAuiWGaWoQtbo45AuhNQDX5qNc6zs9h+Cw54TWAEO1
+        L+VqKcn1HPYcaYA0QBpQXwPolRfkG8venCxQwfNHXRUP3OvFpKnZOqeoibobYCh2dz7nwqWr1ktOURN1
+        N4CezCDfFPS5SN8griW+cMzRDL1CxylqQo4B0gBpgDTAqRMqAzDNneVavxMdw6s57DmFBsD068WPz+kl
+        EKyb5t/MBmZAvGNkraHZN3RNnOCQL7gNKC/sIeOBGRAUFRjwNnMo5gNNaQC94ud6lY9eBaTH5rlLcgSb
+        1oD5BkEX0gBpgDRghjd4rbdZ+0o9cm4kGZp1psAA+iynPDQ3Oxs0mX7CjG3czfmhL7jw40dFGze6fuCQ
+        PsVd/D/0lQY26qKvwwo/c2tEGYp1mE55uWsSiURShkjkLzR7EWikRUzvAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pnlSolicitar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ

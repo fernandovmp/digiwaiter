@@ -11,3 +11,8 @@ C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\
 C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmHall.resources
 C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmContato.resources
 C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmJob.resources
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmJobReq.resources
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmJobCheck.resources
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmAgenda.resources
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmMembros.resources
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmCandidatos.resources

@@ -238,6 +238,7 @@
             this.lblCandidatos.Size = new System.Drawing.Size(108, 21);
             this.lblCandidatos.TabIndex = 5;
             this.lblCandidatos.Text = "     Candidatos";
+            this.lblCandidatos.Click += new System.EventHandler(this.LblCandidatos_Click);
             // 
             // lblMembros
             // 
@@ -253,6 +254,7 @@
             this.lblMembros.Size = new System.Drawing.Size(97, 21);
             this.lblMembros.TabIndex = 6;
             this.lblMembros.Text = "     Membros";
+            this.lblMembros.Click += new System.EventHandler(this.LblMembros_Click);
             // 
             // panel1
             // 
@@ -313,6 +315,7 @@
             this.lblAgenda.Size = new System.Drawing.Size(164, 21);
             this.lblAgenda.TabIndex = 10;
             this.lblAgenda.Text = "     Agenda/Calendário";
+            this.lblAgenda.Click += new System.EventHandler(this.LblAgenda_Click);
             // 
             // label9
             // 
@@ -345,6 +348,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(20, 20);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
             // 
             // panel6
             // 
