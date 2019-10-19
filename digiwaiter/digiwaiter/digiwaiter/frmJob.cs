@@ -11,10 +11,10 @@ using System.Threading;
 
 namespace digiwaiter
 {
-    public partial class frmContato : Form
+    public partial class frmJob : Form
     {
         Thread th;
-        public frmContato()
+        public frmJob()
         {
             InitializeComponent();
         }
@@ -31,16 +31,17 @@ namespace digiwaiter
             Application.Run(new frmHall());
         }
 
-        private void LblVagas_Click(object sender, EventArgs e)
+        private void LblContato_Click(object sender, EventArgs e)
         {
             this.Close();
-            th = new Thread(OpenVagasForm);
+            th = new Thread(OpenContatoForm);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
-        private void OpenVagasForm(object obj)
+
+        private void OpenContatoForm(object obj)
         {
-            Application.Run(new frmJob());
+            Application.Run(new frmContato());
         }
     }
 }

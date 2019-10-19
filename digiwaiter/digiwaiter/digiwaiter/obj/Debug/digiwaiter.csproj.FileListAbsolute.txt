@@ -10,3 +10,4 @@ C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\
 C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmLogin.resources
 C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmHall.resources
 C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmContato.resources
+C:\Users\Gustavo\projects\digiwaiter\digiwaiter\digiwaiter\digiwaiter\obj\Debug\digiwaiter.frmJob.resources

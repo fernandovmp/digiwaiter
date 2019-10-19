@@ -38,15 +38,15 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDashboard = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblVagas = new System.Windows.Forms.Label();
+            this.lblCandidatos = new System.Windows.Forms.Label();
+            this.lblMembros = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblContato = new System.Windows.Forms.Label();
+            this.lblAgenda = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -175,27 +175,27 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.lblDashboard);
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel4.Location = new System.Drawing.Point(-1, 14);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(176, 35);
             this.panel4.TabIndex = 3;
             // 
-            // label2
+            // lblDashboard
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(13, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "     Dashboard";
+            this.lblDashboard.AutoSize = true;
+            this.lblDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.lblDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblDashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDashboard.ForeColor = System.Drawing.Color.White;
+            this.lblDashboard.Image = ((System.Drawing.Image)(resources.GetObject("lblDashboard.Image")));
+            this.lblDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDashboard.Location = new System.Drawing.Point(13, 8);
+            this.lblDashboard.Name = "lblDashboard";
+            this.lblDashboard.Size = new System.Drawing.Size(106, 21);
+            this.lblDashboard.TabIndex = 1;
+            this.lblDashboard.Text = "     Dashboard";
             // 
             // pictureBox1
             // 
@@ -208,62 +208,63 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // lblVagas
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(13, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "     Vagas";
+            this.lblVagas.AutoSize = true;
+            this.lblVagas.BackColor = System.Drawing.Color.Transparent;
+            this.lblVagas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblVagas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVagas.ForeColor = System.Drawing.Color.White;
+            this.lblVagas.Image = ((System.Drawing.Image)(resources.GetObject("lblVagas.Image")));
+            this.lblVagas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblVagas.Location = new System.Drawing.Point(13, 62);
+            this.lblVagas.Name = "lblVagas";
+            this.lblVagas.Size = new System.Drawing.Size(71, 21);
+            this.lblVagas.TabIndex = 2;
+            this.lblVagas.Text = "     Vagas";
+            this.lblVagas.Click += new System.EventHandler(this.LblVagas_Click);
             // 
-            // label5
+            // lblCandidatos
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(13, 102);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 21);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "     Candidatos";
+            this.lblCandidatos.AutoSize = true;
+            this.lblCandidatos.BackColor = System.Drawing.Color.Transparent;
+            this.lblCandidatos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblCandidatos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCandidatos.ForeColor = System.Drawing.Color.White;
+            this.lblCandidatos.Image = ((System.Drawing.Image)(resources.GetObject("lblCandidatos.Image")));
+            this.lblCandidatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCandidatos.Location = new System.Drawing.Point(13, 102);
+            this.lblCandidatos.Name = "lblCandidatos";
+            this.lblCandidatos.Size = new System.Drawing.Size(108, 21);
+            this.lblCandidatos.TabIndex = 5;
+            this.lblCandidatos.Text = "     Candidatos";
             // 
-            // label6
+            // lblMembros
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(13, 142);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 21);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "     Membros";
+            this.lblMembros.AutoSize = true;
+            this.lblMembros.BackColor = System.Drawing.Color.Transparent;
+            this.lblMembros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblMembros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMembros.ForeColor = System.Drawing.Color.White;
+            this.lblMembros.Image = ((System.Drawing.Image)(resources.GetObject("lblMembros.Image")));
+            this.lblMembros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMembros.Location = new System.Drawing.Point(13, 142);
+            this.lblMembros.Name = "lblMembros";
+            this.lblMembros.Size = new System.Drawing.Size(97, 21);
+            this.lblMembros.TabIndex = 6;
+            this.lblMembros.Text = "     Membros";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.lblContato);
+            this.panel1.Controls.Add(this.lblAgenda);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblMembros);
+            this.panel1.Controls.Add(this.lblCandidatos);
+            this.panel1.Controls.Add(this.lblVagas);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(0, 43);
@@ -282,36 +283,36 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "DigiWaiter - copyright 2019";
             // 
-            // label7
+            // lblContato
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(13, 222);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 21);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "     Contato";
-            this.label7.Click += new System.EventHandler(this.Label7_Click);
+            this.lblContato.AutoSize = true;
+            this.lblContato.BackColor = System.Drawing.Color.Transparent;
+            this.lblContato.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblContato.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContato.ForeColor = System.Drawing.Color.White;
+            this.lblContato.Image = ((System.Drawing.Image)(resources.GetObject("lblContato.Image")));
+            this.lblContato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblContato.Location = new System.Drawing.Point(13, 222);
+            this.lblContato.Name = "lblContato";
+            this.lblContato.Size = new System.Drawing.Size(85, 21);
+            this.lblContato.TabIndex = 11;
+            this.lblContato.Text = "     Contato";
+            this.lblContato.Click += new System.EventHandler(this.Label7_Click);
             // 
-            // label16
+            // lblAgenda
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Image = ((System.Drawing.Image)(resources.GetObject("label16.Image")));
-            this.label16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label16.Location = new System.Drawing.Point(13, 182);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(164, 21);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "     Agenda/Calendário";
+            this.lblAgenda.AutoSize = true;
+            this.lblAgenda.BackColor = System.Drawing.Color.Transparent;
+            this.lblAgenda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblAgenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgenda.ForeColor = System.Drawing.Color.White;
+            this.lblAgenda.Image = ((System.Drawing.Image)(resources.GetObject("lblAgenda.Image")));
+            this.lblAgenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblAgenda.Location = new System.Drawing.Point(13, 182);
+            this.lblAgenda.Name = "lblAgenda";
+            this.lblAgenda.Size = new System.Drawing.Size(164, 21);
+            this.lblAgenda.TabIndex = 10;
+            this.lblAgenda.Text = "     Agenda/Calendário";
             // 
             // label9
             // 
@@ -557,11 +558,11 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDashboard;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblVagas;
+        private System.Windows.Forms.Label lblCandidatos;
+        private System.Windows.Forms.Label lblMembros;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
@@ -579,8 +580,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblContato;
+        private System.Windows.Forms.Label lblAgenda;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
