@@ -120,5 +120,15 @@ namespace digiwaiter
         {
             Application.Run(new frmLogin());
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            new frmDetalheCandidato().Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            new frmDetalheCandidato().Show();
+        }
     }
 }
