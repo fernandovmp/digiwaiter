@@ -85,6 +85,7 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -191,6 +192,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.panel16);
             this.panel3.Controls.Add(this.lblCurrentSection);
             this.panel3.Location = new System.Drawing.Point(165, 49);
             this.panel3.Name = "panel3";
@@ -720,6 +722,19 @@
             this.label14.TabIndex = 9;
             this.label14.Text = "Aguardando entrevista";
             // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel16.BackgroundImage")));
+            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel16.Location = new System.Drawing.Point(167, 18);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(25, 25);
+            this.panel16.TabIndex = 22;
+            this.panel16.Click += new System.EventHandler(this.panel16_Click);
+            // 
             // frmCandidatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -849,5 +864,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel16;
     }
 }
