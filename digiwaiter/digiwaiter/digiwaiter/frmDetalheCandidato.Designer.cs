@@ -355,7 +355,7 @@
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "frmDetalheCandidato";
-            this.Text = "frmDetalheCandidato";
+            this.Text = "DigiWaiter";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
