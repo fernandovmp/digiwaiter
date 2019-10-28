@@ -130,5 +130,10 @@ namespace digiwaiter
         {
             new frmDetalheCandidato().Show();
         }
+
+        private void panel16_Click(object sender, EventArgs e)
+        {
+            new frmAdicionarCandidato().Show();
+        }
     }
 }

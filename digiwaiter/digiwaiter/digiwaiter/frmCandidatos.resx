@@ -6655,6 +6655,16 @@
         rPyf/d/5s3v/M16vwP/O+5SX5F1J+c8EMBhzzfV/+FMvAyXEHDMAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="panel16.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA1UlEQVRIS+2SwQ2CQBQFKUSOhBa0De1D
+        64KYeNEKtAavWoAa0aMHnI/vIuQTXI3GhEkmcWH2LwGjnv+jLMsY53iRC0x1+z0YZMOPWOeEsbJwGGJP
+        7pEra0dxqeUTXLZX4lEoa0dxyAFnZe0o9g6wD+qRKWuiwEWZdSnaB61zwIGyJo/GR1kFS/sn5VjIDP3h
+        dYgrtPw8mv/9A7iU4AxXuMWrtN9LnGKivDtsGuEGu7LGoba3QzjBm+16Edsz1hgfon2Vh7HTGB+FwWiM
+        j7pgNKbnp0TRHaOPq5nhZUMrAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="lblDashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
