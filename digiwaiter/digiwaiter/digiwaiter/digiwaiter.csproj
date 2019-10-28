@@ -69,12 +69,6 @@
     <Compile Include="frmContato.Designer.cs">
       <DependentUpon>frmContato.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDetalheCandidatoChecklist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDetalheCandidatoChecklist.Designer.cs">
-      <DependentUpon>frmDetalheCandidatoChecklist.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmDetalheCandidato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,9 +124,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmContato.resx">
       <DependentUpon>frmContato.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDetalheCandidatoChecklist.resx">
-      <DependentUpon>frmDetalheCandidatoChecklist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDetalheCandidato.resx">
       <DependentUpon>frmDetalheCandidato.cs</DependentUpon>
