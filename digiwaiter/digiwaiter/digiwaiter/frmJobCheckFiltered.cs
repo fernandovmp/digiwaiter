@@ -11,10 +11,10 @@ using System.Threading;
 
 namespace digiwaiter
 {
-    public partial class frmJobCheck : Form
+    public partial class frmJobCheckFiltered : Form
     {
         Thread th;
-        public frmJobCheck()
+        public frmJobCheckFiltered()
         {
             InitializeComponent();
         }
@@ -125,14 +125,6 @@ namespace digiwaiter
         private void OpenPontosForm(object obj)
         {
             Application.Run(new frmPontos());
-        }
-
-        private void label33_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            th = new Thread(obj => Application.Run(new frmJobCheckFiltered()));
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
         }
     }
 }
