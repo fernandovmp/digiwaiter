@@ -11,15 +11,21 @@ using System.Threading;
 
 namespace digiwaiter
 {
-    public partial class frmHall : Form
+    public partial class frmPontos : Form
     {
         Thread th;
-        public frmHall()
+        public frmPontos()
         {
             InitializeComponent();
         }
 
-        private void Label7_Click(object sender, EventArgs e)
+        private void PnlCadastrar_MouseClick(object sender, MouseEventArgs e)
+        {
+            var details = new frmRegistrarPonto();
+            details.Show();
+        }
+
+        private void LblContato_Click(object sender, EventArgs e)
         {
             this.Close();
             th = new Thread(OpenContatoForm);
@@ -30,19 +36,6 @@ namespace digiwaiter
         private void OpenContatoForm(object obj)
         {
             Application.Run(new frmContato());
-        }
-
-        private void LblVagas_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            th = new Thread(OpenVagasForm);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-        }
-
-        private void OpenVagasForm(object obj)
-        {
-            Application.Run(new frmJob());
         }
 
         private void LblCandidatos_Click(object sender, EventArgs e)
@@ -58,30 +51,30 @@ namespace digiwaiter
             Application.Run(new frmCandidatos());
         }
 
-        private void PictureBox3_Click(object sender, EventArgs e)
+        private void LblVagas_Click(object sender, EventArgs e)
         {
             this.Close();
-            th = new Thread(OpenMainForm);
+            th = new Thread(OpenVagasForm);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
 
-        private void OpenMainForm(object obj)
+        private void OpenVagasForm(object obj)
         {
-            Application.Run(new frmLogin());
+            Application.Run(new frmJob());
         }
 
-        private void LblPontos_Click(object sender, EventArgs e)
+        private void LblDashboard_Click(object sender, EventArgs e)
         {
             this.Close();
-            th = new Thread(OpenPontosForm);
+            th = new Thread(OpenHallForm);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
 
-        private void OpenPontosForm(object obj)
+        private void OpenHallForm(object obj)
         {
-            Application.Run(new frmPontos());
+            Application.Run(new frmHall());
         }
     }
 }

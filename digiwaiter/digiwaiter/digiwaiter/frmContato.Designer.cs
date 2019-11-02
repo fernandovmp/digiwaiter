@@ -43,10 +43,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblVagas = new System.Windows.Forms.Label();
             this.lblCandidatos = new System.Windows.Forms.Label();
-            this.lblMembros = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblAgenda = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -62,6 +60,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblMensagem = new System.Windows.Forms.Label();
             this.txtMensagem = new System.Windows.Forms.TextBox();
+            this.lblPontos = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -169,7 +168,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel4.Controls.Add(this.lblContato);
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel4.Location = new System.Drawing.Point(-1, 215);
+            this.panel4.Location = new System.Drawing.Point(-1, 135);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(176, 35);
             this.panel4.TabIndex = 3;
@@ -247,31 +246,14 @@
             this.lblCandidatos.Text = "     Candidatos";
             this.lblCandidatos.Click += new System.EventHandler(this.LblCandidatos_Click);
             // 
-            // lblMembros
-            // 
-            this.lblMembros.AutoSize = true;
-            this.lblMembros.BackColor = System.Drawing.Color.Transparent;
-            this.lblMembros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblMembros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMembros.ForeColor = System.Drawing.Color.White;
-            this.lblMembros.Image = ((System.Drawing.Image)(resources.GetObject("lblMembros.Image")));
-            this.lblMembros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblMembros.Location = new System.Drawing.Point(13, 142);
-            this.lblMembros.Name = "lblMembros";
-            this.lblMembros.Size = new System.Drawing.Size(97, 21);
-            this.lblMembros.TabIndex = 6;
-            this.lblMembros.Text = "     Membros";
-            this.lblMembros.Click += new System.EventHandler(this.LblMembros_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.lblPontos);
             this.panel1.Controls.Add(this.lblDashboard);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.lblAgenda);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.lblMembros);
             this.panel1.Controls.Add(this.lblCandidatos);
             this.panel1.Controls.Add(this.lblVagas);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -291,22 +273,6 @@
             this.label4.Size = new System.Drawing.Size(141, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "DigiWaiter - copyright 2019";
-            // 
-            // lblAgenda
-            // 
-            this.lblAgenda.AutoSize = true;
-            this.lblAgenda.BackColor = System.Drawing.Color.Transparent;
-            this.lblAgenda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblAgenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgenda.ForeColor = System.Drawing.Color.White;
-            this.lblAgenda.Image = ((System.Drawing.Image)(resources.GetObject("lblAgenda.Image")));
-            this.lblAgenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblAgenda.Location = new System.Drawing.Point(13, 182);
-            this.lblAgenda.Name = "lblAgenda";
-            this.lblAgenda.Size = new System.Drawing.Size(164, 21);
-            this.lblAgenda.TabIndex = 10;
-            this.lblAgenda.Text = "     Agenda/Calendário";
-            this.lblAgenda.Click += new System.EventHandler(this.LblAgenda_Click);
             // 
             // label9
             // 
@@ -453,6 +419,22 @@
             this.txtMensagem.Size = new System.Drawing.Size(572, 215);
             this.txtMensagem.TabIndex = 18;
             // 
+            // lblPontos
+            // 
+            this.lblPontos.AutoSize = true;
+            this.lblPontos.BackColor = System.Drawing.Color.Transparent;
+            this.lblPontos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPontos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPontos.ForeColor = System.Drawing.Color.White;
+            this.lblPontos.Image = ((System.Drawing.Image)(resources.GetObject("lblPontos.Image")));
+            this.lblPontos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPontos.Location = new System.Drawing.Point(13, 182);
+            this.lblPontos.Name = "lblPontos";
+            this.lblPontos.Size = new System.Drawing.Size(162, 21);
+            this.lblPontos.TabIndex = 14;
+            this.lblPontos.Text = "     Controle de Pontos";
+            this.lblPontos.Click += new System.EventHandler(this.LblPontos_Click);
+            // 
             // frmContato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -514,7 +496,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblVagas;
         private System.Windows.Forms.Label lblCandidatos;
-        private System.Windows.Forms.Label lblMembros;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
@@ -522,7 +503,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblContato;
-        private System.Windows.Forms.Label lblAgenda;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblDestinatario;
         private System.Windows.Forms.TextBox txtDestinatario;
@@ -536,5 +516,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMensagem;
         private System.Windows.Forms.TextBox txtMensagem;
+        private System.Windows.Forms.Label lblPontos;
     }
 }

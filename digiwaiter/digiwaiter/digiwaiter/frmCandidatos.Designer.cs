@@ -36,11 +36,13 @@
             this.picConfig = new System.Windows.Forms.PictureBox();
             this.picBell = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.lblCurrentSection = new System.Windows.Forms.Label();
             this.lblDashboard = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCandidatos = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblContato = new System.Windows.Forms.Label();
             this.lblVagas = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -85,7 +87,8 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.lblPontos = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -199,6 +202,19 @@
             this.panel3.Size = new System.Drawing.Size(621, 50);
             this.panel3.TabIndex = 3;
             // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel16.BackgroundImage")));
+            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel16.Location = new System.Drawing.Point(167, 15);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(25, 25);
+            this.panel16.TabIndex = 22;
+            this.panel16.Click += new System.EventHandler(this.panel16_Click);
+            // 
             // lblCurrentSection
             // 
             this.lblCurrentSection.AutoSize = true;
@@ -254,6 +270,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.lblPontos);
+            this.panel1.Controls.Add(this.lblContato);
             this.panel1.Controls.Add(this.lblVagas);
             this.panel1.Controls.Add(this.lblDashboard);
             this.panel1.Controls.Add(this.label4);
@@ -265,6 +283,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(175, 523);
             this.panel1.TabIndex = 1;
+            // 
+            // lblContato
+            // 
+            this.lblContato.AutoSize = true;
+            this.lblContato.BackColor = System.Drawing.Color.Transparent;
+            this.lblContato.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblContato.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContato.ForeColor = System.Drawing.Color.White;
+            this.lblContato.Image = ((System.Drawing.Image)(resources.GetObject("lblContato.Image")));
+            this.lblContato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblContato.Location = new System.Drawing.Point(13, 142);
+            this.lblContato.Name = "lblContato";
+            this.lblContato.Size = new System.Drawing.Size(85, 21);
+            this.lblContato.TabIndex = 12;
+            this.lblContato.Text = "     Contato";
+            this.lblContato.Click += new System.EventHandler(this.LblContato_Click);
             // 
             // lblVagas
             // 
@@ -722,18 +756,29 @@
             this.label14.TabIndex = 9;
             this.label14.Text = "Aguardando entrevista";
             // 
-            // panel16
+            // hScrollBar1
             // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel16.BackgroundImage")));
-            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel16.Location = new System.Drawing.Point(167, 18);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(25, 25);
-            this.panel16.TabIndex = 22;
-            this.panel16.Click += new System.EventHandler(this.panel16_Click);
+            this.hScrollBar1.Location = new System.Drawing.Point(181, 525);
+            this.hScrollBar1.Maximum = 25;
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(603, 27);
+            this.hScrollBar1.TabIndex = 23;
+            // 
+            // lblPontos
+            // 
+            this.lblPontos.AutoSize = true;
+            this.lblPontos.BackColor = System.Drawing.Color.Transparent;
+            this.lblPontos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPontos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPontos.ForeColor = System.Drawing.Color.White;
+            this.lblPontos.Image = ((System.Drawing.Image)(resources.GetObject("lblPontos.Image")));
+            this.lblPontos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPontos.Location = new System.Drawing.Point(13, 182);
+            this.lblPontos.Name = "lblPontos";
+            this.lblPontos.Size = new System.Drawing.Size(162, 21);
+            this.lblPontos.TabIndex = 13;
+            this.lblPontos.Text = "     Controle de Pontos";
+            this.lblPontos.Click += new System.EventHandler(this.LblPontos_Click);
             // 
             // frmCandidatos
             // 
@@ -742,6 +787,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.panel12);
@@ -865,5 +911,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label lblContato;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Windows.Forms.Label lblPontos;
     }
 }

@@ -82,32 +82,6 @@ namespace digiwaiter
             Application.Run(new frmCandidatos());
         }
 
-        private void LblMembros_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            th = new Thread(OpenMembrosForm);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-        }
-
-        private void OpenMembrosForm(object obj)
-        {
-            Application.Run(new frmMembros());
-        }
-
-        private void LblAgenda_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            th = new Thread(OpenAgendaForm);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-        }
-
-        private void OpenAgendaForm(object obj)
-        {
-            Application.Run(new frmAgenda());
-        }
-
         private void LblVagas_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -132,6 +106,19 @@ namespace digiwaiter
         private void OpenMainForm(object obj)
         {
             Application.Run(new frmLogin());
+        }
+
+        private void LblPontos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(OpenPontosForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void OpenPontosForm(object obj)
+        {
+            Application.Run(new frmPontos());
         }
     }
 }

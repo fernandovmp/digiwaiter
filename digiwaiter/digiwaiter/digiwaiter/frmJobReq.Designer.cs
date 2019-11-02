@@ -43,10 +43,8 @@
             this.lblDashboard = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCandidatos = new System.Windows.Forms.Label();
-            this.lblMembros = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblAgenda = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -61,23 +59,24 @@
             this.lblPerfil = new System.Windows.Forms.Label();
             this.txtReqTecnicos = new System.Windows.Forms.TextBox();
             this.grpReqTecnicos = new System.Windows.Forms.GroupBox();
-            this.btnSolicitar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSolicitar = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.lblPontos = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -216,7 +215,7 @@
             this.lblContato.ForeColor = System.Drawing.Color.White;
             this.lblContato.Image = ((System.Drawing.Image)(resources.GetObject("lblContato.Image")));
             this.lblContato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblContato.Location = new System.Drawing.Point(13, 222);
+            this.lblContato.Location = new System.Drawing.Point(13, 142);
             this.lblContato.Name = "lblContato";
             this.lblContato.Size = new System.Drawing.Size(85, 21);
             this.lblContato.TabIndex = 11;
@@ -265,32 +264,15 @@
             this.lblCandidatos.Text = "     Candidatos";
             this.lblCandidatos.Click += new System.EventHandler(this.LblCandidatos_Click);
             // 
-            // lblMembros
-            // 
-            this.lblMembros.AutoSize = true;
-            this.lblMembros.BackColor = System.Drawing.Color.Transparent;
-            this.lblMembros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblMembros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMembros.ForeColor = System.Drawing.Color.White;
-            this.lblMembros.Image = ((System.Drawing.Image)(resources.GetObject("lblMembros.Image")));
-            this.lblMembros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblMembros.Location = new System.Drawing.Point(13, 142);
-            this.lblMembros.Name = "lblMembros";
-            this.lblMembros.Size = new System.Drawing.Size(97, 21);
-            this.lblMembros.TabIndex = 6;
-            this.lblMembros.Text = "     Membros";
-            this.lblMembros.Click += new System.EventHandler(this.LblMembros_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.lblPontos);
             this.panel1.Controls.Add(this.lblContato);
             this.panel1.Controls.Add(this.lblDashboard);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.lblAgenda);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.lblMembros);
             this.panel1.Controls.Add(this.lblCandidatos);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel4);
@@ -309,22 +291,6 @@
             this.label4.Size = new System.Drawing.Size(141, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "DigiWaiter - copyright 2019";
-            // 
-            // lblAgenda
-            // 
-            this.lblAgenda.AutoSize = true;
-            this.lblAgenda.BackColor = System.Drawing.Color.Transparent;
-            this.lblAgenda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblAgenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgenda.ForeColor = System.Drawing.Color.White;
-            this.lblAgenda.Image = ((System.Drawing.Image)(resources.GetObject("lblAgenda.Image")));
-            this.lblAgenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblAgenda.Location = new System.Drawing.Point(13, 182);
-            this.lblAgenda.Name = "lblAgenda";
-            this.lblAgenda.Size = new System.Drawing.Size(164, 21);
-            this.lblAgenda.TabIndex = 10;
-            this.lblAgenda.Text = "     Agenda/Calendário";
-            this.lblAgenda.Click += new System.EventHandler(this.LblAgenda_Click);
             // 
             // label9
             // 
@@ -452,11 +418,11 @@
             // 
             // grpReqTecnicos
             // 
-            this.grpReqTecnicos.Controls.Add(this.panel11);
             this.grpReqTecnicos.Controls.Add(this.panel10);
             this.grpReqTecnicos.Controls.Add(this.panel9);
             this.grpReqTecnicos.Controls.Add(this.panel8);
             this.grpReqTecnicos.Controls.Add(this.panel7);
+            this.grpReqTecnicos.Controls.Add(this.panel11);
             this.grpReqTecnicos.Controls.Add(this.panel6);
             this.grpReqTecnicos.Controls.Add(this.label6);
             this.grpReqTecnicos.Controls.Add(this.textBox5);
@@ -476,30 +442,75 @@
             this.grpReqTecnicos.TabStop = false;
             this.grpReqTecnicos.Text = "Requisitos Técnicos";
             // 
-            // btnSolicitar
+            // panel11
             // 
-            this.btnSolicitar.Location = new System.Drawing.Point(709, 411);
-            this.btnSolicitar.Name = "btnSolicitar";
-            this.btnSolicitar.Size = new System.Drawing.Size(52, 137);
-            this.btnSolicitar.TabIndex = 11;
-            this.btnSolicitar.Text = "Solicitar";
-            this.btnSolicitar.UseVisualStyleBackColor = true;
+            this.panel11.BackColor = System.Drawing.Color.Transparent;
+            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel11.Location = new System.Drawing.Point(402, 52);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(21, 25);
+            this.panel11.TabIndex = 21;
             // 
-            // label1
+            // panel6
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Requisito 1:";
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel6.Location = new System.Drawing.Point(231, 18);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(21, 25);
+            this.panel6.TabIndex = 4;
             // 
-            // textBox1
+            // label6
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 25);
-            this.textBox1.TabIndex = 6;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(258, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 17);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Requisito 5:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(340, 18);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(137, 25);
+            this.textBox5.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 114);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 17);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Requisito 4:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(88, 111);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(137, 25);
+            this.textBox4.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Requisito 3:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(88, 80);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(137, 25);
+            this.textBox3.TabIndex = 8;
             // 
             // textBox2
             // 
@@ -517,68 +528,34 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Requisito 2:";
             // 
-            // textBox3
+            // textBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(88, 80);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(137, 25);
-            this.textBox3.TabIndex = 8;
+            this.textBox1.Location = new System.Drawing.Point(88, 18);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(137, 25);
+            this.textBox1.TabIndex = 6;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Requisito 3:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Requisito 1:";
             // 
-            // textBox4
+            // btnSolicitar
             // 
-            this.textBox4.Location = new System.Drawing.Point(88, 111);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(137, 25);
-            this.textBox4.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 114);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 17);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Requisito 4:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(340, 18);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(137, 25);
-            this.textBox5.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(258, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 17);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Requisito 5:";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel6.Location = new System.Drawing.Point(231, 18);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(21, 25);
-            this.panel6.TabIndex = 4;
+            this.btnSolicitar.Location = new System.Drawing.Point(709, 411);
+            this.btnSolicitar.Name = "btnSolicitar";
+            this.btnSolicitar.Size = new System.Drawing.Size(52, 137);
+            this.btnSolicitar.TabIndex = 11;
+            this.btnSolicitar.Text = "Solicitar";
+            this.btnSolicitar.UseVisualStyleBackColor = true;
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
@@ -589,7 +566,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
@@ -600,7 +577,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
@@ -611,7 +588,7 @@
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
@@ -620,16 +597,21 @@
             this.panel10.Size = new System.Drawing.Size(21, 25);
             this.panel10.TabIndex = 5;
             // 
-            // panel11
+            // lblPontos
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
-            this.panel11.Location = new System.Drawing.Point(402, 52);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(21, 25);
-            this.panel11.TabIndex = 21;
+            this.lblPontos.AutoSize = true;
+            this.lblPontos.BackColor = System.Drawing.Color.Transparent;
+            this.lblPontos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPontos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPontos.ForeColor = System.Drawing.Color.White;
+            this.lblPontos.Image = ((System.Drawing.Image)(resources.GetObject("lblPontos.Image")));
+            this.lblPontos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPontos.Location = new System.Drawing.Point(13, 182);
+            this.lblPontos.Name = "lblPontos";
+            this.lblPontos.Size = new System.Drawing.Size(162, 21);
+            this.lblPontos.TabIndex = 22;
+            this.lblPontos.Text = "     Controle de Pontos";
+            this.lblPontos.Click += new System.EventHandler(this.LblPontos_Click);
             // 
             // frmJobReq
             // 
@@ -694,7 +676,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblVagas;
         private System.Windows.Forms.Label lblCandidatos;
-        private System.Windows.Forms.Label lblMembros;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
@@ -702,7 +683,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblContato;
-        private System.Windows.Forms.Label lblAgenda;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblSetor;
         private System.Windows.Forms.ComboBox comboSetor;
@@ -732,5 +712,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label lblPontos;
     }
 }
