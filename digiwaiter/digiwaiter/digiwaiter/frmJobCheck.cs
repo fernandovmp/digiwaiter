@@ -126,5 +126,13 @@ namespace digiwaiter
         {
             Application.Run(new frmPontos());
         }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(obj => Application.Run(new frmJobCheckFiltered()));
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
     }
 }
