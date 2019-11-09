@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace digiwaiter
 {
-    public partial class frmJobDetails : Form
+    public partial class frmPublicarVaga : Form
     {
-        public frmJobDetails()
+        public frmPublicarVaga()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            new frmPublicarVaga().ShowDialog();
         }
     }
 }

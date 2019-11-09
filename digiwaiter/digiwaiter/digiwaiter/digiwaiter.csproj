@@ -117,6 +117,12 @@
     <Compile Include="frmPontos.Designer.cs">
       <DependentUpon>frmPontos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPublicarVaga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPublicarVaga.Designer.cs">
+      <DependentUpon>frmPublicarVaga.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegistrarPonto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPontos.resx">
       <DependentUpon>frmPontos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPublicarVaga.resx">
+      <DependentUpon>frmPublicarVaga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrarPonto.resx">
       <DependentUpon>frmRegistrarPonto.cs</DependentUpon>
