@@ -321,6 +321,7 @@
             this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
             this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel11.Location = new System.Drawing.Point(14, 3);
             this.panel11.Name = "panel11";
@@ -331,6 +332,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(3, 5);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(183, 20);
             this.textBox5.TabIndex = 22;
             this.textBox5.Text = "Requisito 1";
@@ -340,6 +342,7 @@
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel6.Location = new System.Drawing.Point(192, 3);
             this.panel6.Name = "panel6";
@@ -351,6 +354,7 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel3.Location = new System.Drawing.Point(192, 29);
             this.panel3.Name = "panel3";
@@ -361,6 +365,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(3, 31);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(183, 20);
             this.textBox6.TabIndex = 24;
             this.textBox6.Text = "Requisito 3";
@@ -370,6 +375,7 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel4.Location = new System.Drawing.Point(192, 55);
             this.panel4.Name = "panel4";
@@ -380,6 +386,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(3, 57);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(183, 20);
             this.textBox7.TabIndex = 26;
             this.textBox7.Text = "Requisito 4";
@@ -389,6 +396,7 @@
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel5.Location = new System.Drawing.Point(192, 81);
             this.panel5.Name = "panel5";
@@ -399,6 +407,7 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(3, 83);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(183, 20);
             this.textBox11.TabIndex = 28;
             this.textBox11.Text = "Requisito 6";
@@ -407,6 +416,7 @@
             // 
             this.textBox12.Location = new System.Drawing.Point(41, 6);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(186, 20);
             this.textBox12.TabIndex = 24;
             this.textBox12.Text = "Requisito 2";
@@ -415,6 +425,7 @@
             // 
             this.textBox13.Location = new System.Drawing.Point(41, 34);
             this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(186, 20);
             this.textBox13.TabIndex = 26;
             this.textBox13.Text = "Requisito 5";
@@ -424,6 +435,7 @@
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel7.Location = new System.Drawing.Point(14, 31);
             this.panel7.Name = "panel7";
@@ -434,6 +446,7 @@
             // 
             this.textBox14.Location = new System.Drawing.Point(41, 65);
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(186, 20);
             this.textBox14.TabIndex = 26;
             this.textBox14.Text = "Requisito 7";
@@ -443,6 +456,7 @@
             this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel8.Location = new System.Drawing.Point(14, 62);
             this.panel8.Name = "panel8";
@@ -453,6 +467,7 @@
             // 
             this.textBox15.Location = new System.Drawing.Point(42, 96);
             this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(186, 20);
             this.textBox15.TabIndex = 26;
             this.textBox15.Text = "Requisito 8";
@@ -462,6 +477,7 @@
             this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel9.Location = new System.Drawing.Point(15, 93);
             this.panel9.Name = "panel9";
@@ -472,6 +488,7 @@
             // 
             this.textBox16.Location = new System.Drawing.Point(42, 127);
             this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(186, 20);
             this.textBox16.TabIndex = 26;
             this.textBox16.Text = "Requisito 9";
@@ -481,6 +498,7 @@
             this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel10.Location = new System.Drawing.Point(15, 124);
             this.panel10.Name = "panel10";
@@ -491,6 +509,7 @@
             // 
             this.textBox17.Location = new System.Drawing.Point(42, 158);
             this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(186, 20);
             this.textBox17.TabIndex = 26;
             this.textBox17.Text = "Requisito 10";
@@ -500,6 +519,7 @@
             this.panel12.BackColor = System.Drawing.Color.Transparent;
             this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(94)))), ((int)(((byte)(194)))));
             this.panel12.Location = new System.Drawing.Point(15, 155);
             this.panel12.Name = "panel12";
